@@ -1,13 +1,26 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Le plongeon</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
-    <h1>Bienvenue</h1>
-    <h2>test</h2>
-</body>
-</html>
+<template>
+  <AG />
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import AG from './game/src/components/AG.vue';
+
+export default defineComponent({
+  name: 'App',
+  components: {
+    AG
+  }
+});
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
